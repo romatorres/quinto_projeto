@@ -1,0 +1,231 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap');
+
+/* FONTS */
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.font_play{
+    font-family: 'Playfair Display', sans-serif;
+}
+
+/* COLORS */
+.color_primary{ 
+    color: #2C2141;
+}
+.color_secondary{
+    color: #3F2F60;
+}
+.color_tertiary{
+    color: #ED839A;
+} 
+.color_quaternary{
+    color: #BD4C72;
+}
+
+/* BACKGROUND */
+.bg_header{
+    background-image: url(../../dist/img/casal-pordosol.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.bg_section1{
+    background: linear-gradient(180deg, #2C2141 43.39%, #3E2D5F 100%);
+}
+.bg_section2{
+    background: #3E2D5F;
+    background-image: url(../../dist/img/vector1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom bottom;
+}
+.bg_section4{
+    background: #DB8495;
+    background-image: url(../../dist/img/ceu.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.bg_section5{
+    background-image: url(../../dist/img/vector2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* BUTTON */
+.btn_header{
+    height: 4.1rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.125rem;
+    border: none;
+    background-color: #0ACC6F;
+}
+.btn_sky{
+    height: 4.1rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.125rem;
+    border: none;
+    background: #3E2D5F;
+}
+
+
+/* Dialog Box */
+.dialog_box1{
+    width: 393px;
+    height: 456px;
+    background-color: #3F2F60;;
+    position: relative;
+    border-radius: 17.78px;
+    padding: 17px;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.10);
+    font-size: 0.875rem;
+    line-height: 16.41px;
+}
+.dialog_box1::after{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #3F2F60;
+    border-radius: 12px;
+    position: absolute;
+    bottom: -16px;
+    left: 164px;
+    transform: rotate(45deg);
+}
+
+.dialog_box2{
+    width: 24.563rem;
+    background-color: #3F2F60;;
+    position: relative;
+    border-radius: 17.78px;
+    padding: 17px;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.10);
+    font-size: 0.875rem;
+    line-height: 16.41px;
+}
+.dialog_box2::after{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #3F2F60;
+    border-radius: 12px;
+    position: absolute;
+    bottom: -16px;
+    left: 164px;
+    transform: rotate(45deg);
+}
+
+.dialog_box3{
+    width: 24.563rem;
+    background-color: #3F2F60;;
+    position: relative;
+    border-radius: 17.78px;
+    padding: 17px;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.10);
+    font-size: 0.875rem;
+    line-height: 16.41px;
+}
+.dialog_box3::after{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #3F2F60;
+    border-radius: 12px;
+    position: absolute;
+    bottom: -16px;
+    left: 164px;
+    transform: rotate(45deg);
+}
+
+/*CARD*/
+.center_card{
+    margin-left: 140px !important;
+    margin-right: 140px !important;
+}
+.card{
+    align-items: center !important;
+    border-radius: 8px !important;
+    background: #DB8495 !important;
+}
+.card-img-top{
+    margin-top: -34px;
+    width: 90% !important;
+    border-radius: 8px !important;
+}
+.card-text{
+    font-size: 14px;
+}
+.border_card{
+    border: 1px solid #fff;
+    width: 77px;
+    color: #fff;
+    margin: 0 auto;
+}
+.card_blue{
+    background: #3F2F60 !important;
+}
+
+.card_2{
+    height: 24rem;
+    width: 18rem;
+}
+
+
+
+/* MEDIA QUERY */
+@media (max-width: 576px) {
+  
+    .center_card {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+    .card_blue {
+        background: #DB8495 !important;
+    }
+    .bg_header{
+        background: #2C2141;
+        background-image: url(../../dist/img/casal-pordosol_menor.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center top;
+    }
+    .bg_header p{
+        color: #fff;
+    }
+    .btn_header{
+        height: 3.125rem;
+    }
+    .bg_section5{
+        background-image: url(../../dist/img/vector2_mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+    }
+}
+ 
+@media (min-width: 577px){
+    .bg_header h3{
+        font-size: 4.625rem;
+        font-weight: 400;
+    }
+    .bg_header h4{
+        font-size: 2.125rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .hide_box1{
+        display: none;
+    }
+}
+
+@media (min-width: 992px){
+   .hide_box2{
+    display: none;
+   } 
+}
